@@ -1,68 +1,521 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aircool Refrigeración | Servicio Técnico y Mantenimiento</title>
-  <meta name="description" content="Empresa especializada en refrigeración y climatización comercial e industrial. Instalaciones, mantenimiento, reparación y limpieza de equipos. Resistencia, Chaco."/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
-  <style>
-    body { font-family: 'Poppins', sans-serif; }
-    header, footer { background-color: #002c5f; color: white; padding: 20px; text-align: center; }
-    #logo img { max-height: 80px; }
-    .servicios { padding: 40px 20px; background-color: #f9f9f9; }
-    .servicio { margin-bottom: 30px; }
-    .servicio h3 { margin-top: 15px; }
-    .contacto { background-color: #f0f0f0; padding: 30px; }
-    .btn-whatsapp { background-color: #25d366; color: white; border: none; padding: 10px 20px; border-radius: 5px; text-decoration: none; display: inline-block; }
-    a.btn-whatsapp:hover { background-color: #1ebe5d; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalación Aire Acondicionado | Empresa Climatización | MB</title>
+    <meta name="description" content="Empresa de soluciones inteligentes de refrigeración. Servicios desde la instalación de aires acondicionados hasta el alquiler de cámaras de frío. Contáctanos!"/>
+    <link rel="canonical" href="https://www.mbrefrigeracion.com.ar/"/>
+    
+    <meta name="Language" content="es-ES"/>
+    <meta name="Revisit" content="7 days"/>
+    <meta name="robots" content="follow,index"/>
+    <meta name="Distribution" content="global"/>    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+      <!-- //// FAVICON  //// -->
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon">
+<link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+
+      <!--Facebook-->
+<meta property="og:title" content="Instalación, mantenimiento y reparación de equipos de refrigeración"/>
+<meta property="og:url" content="https://www.mbrefrigeracion.com.ar/"/>
+<meta property="og:site_name" content="Empresa de climatización"/>
+<meta property="og:description" content="Empresa de soluciones inteligentes. Ofrecemos servicio y mantenimiento de equipos frigoríficos y comerciales, así como alquiler de cámaras de frío."/>
+
+<!-- Schema Website-->
+<script type="application/ld+json">
+	{
+	"@context": "http://schema.org/",
+	"@type": "WebSite",
+	"name": "MB refrigeración",
+	"alternateName": "MB",
+	"url": "https://www.mbrefrigeracion.com.ar/"
+
+	}
+	</script>
+<script type='application/ld+json'> 
+  {
+    "@context": "http://www.schema.org",
+    "@type": "Organization",
+    "name": "MB refrigeración",
+    "url": "https://www.mbrefrigeracion.com.ar/",
+    "logo": "https://www.mbrefrigeracion.com.ar/img/logo-mb.png",
+    "description": "Instalación, mantenimiento y reparación de equipos de refrigeración",
+    "areaServed" : ["Buenos Aires"],
+    "email": "mailto:info@mbrefrigeracion.com.ar",
+    "telephone" : "(011) 153241-0895",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Concejal Natalio Querido 1989",
+      "addressLocality": "Vicente Lopez",
+      "addressRegion": "Buenos Aires,
+      "postalCode": "1605",
+      "addressCountry": "Argentina"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "5"
+  }
+}
+   </script>
+
+    <!--Estilos-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--Tipografia-->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js?hl=es" async defer></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180216635-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'UA-180216635-1');
+    </script>
 </head>
 <body>
-  <header>
-    <div id="logo">
-      <img src="img/logo-aircool.png" alt="Aircool Refrigeración">
-    </div>
-    <h1>Aircool Refrigeración</h1>
-    <p>Servicio Técnico, Instalación y Mantenimiento</p>
-    <p>Resistencia, Chaco</p>
-  </header>
-
-  <main>
-    <section class="servicios container">
-      <h2 class="text-center mb-5">Nuestros Servicios</h2>
-      <div class="row">
-        <div class="col-md-4 servicio">
-          <img src="img/servicio1.jpg" class="img-fluid" alt="Mantenimiento de Aires">
-          <h3>Mantenimiento de Aires Acondicionados</h3>
-          <p>Limpieza profunda, verificación de presiones, rendimiento y seguridad eléctrica.</p>
+    <header>
+        <nav>
+            <div id="menu">
+                <div id="logo">
+                    <img src="img/logo-mb.png" alt="logo de mb refrigeradores">
+                </div>
+                <div id="presupuesto">
+                    <div id="email">
+                        <img src="img/mensaje.png" alt="icono de mensaje">
+                    </div>
+                    <div id="info-email">
+                        <p>Solicita presupuesto!</p>
+                        <a href="mailto:mailto:info@mbrefrigeracion.com.ar">info@mbrefrigeracion.com.ar</a>
+                    </div>
+                </div>
+            </div>
+            <div id="llamada">
+                <div id="icono-call">
+                    <img src="img/call.png" alt="icono de llamada">
+                </div>
+                <div id="texto-llamada">
+                    <p>Llamanos hoy!</p>
+                    <a href="tel:+549111532410895">(011) 153241-0895</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid barra_superior barra-dos">
+            <nav class="navbar navbar-static-top navbar-custom" role="navigation">
+              <div class="upper-nav">
+                <div id="divphones" class="pull-right dp">
+                  <div id="phones">
+                    <div class="dp3 menu">
+                      <div class="text-menu"><a href="index.html">Home</a></div>
+                      <div class="text-menu desplegable"><a href="#" class="des">Servicios</a>
+                        <nav class="desp">
+                          <ul>
+                            <li><a class="dropdown-item" href="aire-acondicionado-automotor.html">Aire Acondicionado Automotor</a></li>
+                            <li><a class="dropdown-item" href="camara-frigorifica.html">Camara Frigorífica</a></li>
+                            <li><a class="dropdown-item" href="camaras-frio.html">Camaras de Frío</a></li>
+                            <li><a class="dropdown-item" href="equipos-refrigeracion.html">Equipos de Refrigeración</a></li>
+                            <li><a class="dropdown-item" href="heladeras-comerciales.html">Heladeras Comerciales</a></li>
+                            <li><a class="dropdown-item" href="limpieza-aire-acondicionado.html">Limpieza de Aires Acondicionados</a></li>
+                            <li><a class="dropdown-item" href="mantenimiento-aire-acondicionado.html">Mantenimiento de Aires Acondicionados</a></li>
+                            <li><a class="dropdown-item" href="radiadores-calefaccion.html">Radiadores de Calefacción</a></li>
+                            <li><a class="dropdown-item" href="refrigeracion-aire-acondicionado.html">Reparación de Aires Acondicionados</a></li>
+                            <li><a class="dropdown-item" href="reparacion-aire-auto.html">Reparación de Aires de Autos</a></li>
+                            <li><a class="dropdown-item" href="service-heladeras.html">Servicio de Heladeras</a></li>
+                          </ul>
+                        </nav>
+                      </div>
+                      <div class="text-menu"><a href="https://www.mbrefrigeracion.com.ar/#nos-eligen">Nos Eligen</a></div>
+                      <div class="text-menu"><a href="https://www.mbrefrigeracion.com.ar/#about">Nosotros</a></div>
+                      <div class="text-menu"><a href="#footer">Contacto</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
         </div>
-        <div class="col-md-4 servicio">
-          <img src="img/servicio2.jpg" class="img-fluid" alt="Refrigeración Comercial">
-          <h3>Refrigeración Comercial</h3>
-          <p>Instalación y reparación de cámaras, heladeras y sistemas de frío alimentario.</p>
+        <div id="banner">
+            <div id="banner-texto">
+                <h1>INSTALACION, MANTENIMIENTO <br>Y REPARACIÓN DE EQUIPOS.</h1>
+                <h2>+10 años ofreciendo soluciones a integrales, prestando<br> 
+                    un servicio óptimo y de alta calidad!</h2>
+                <a href="#servicios"> Servicios</a>
+            </div>
         </div>
-        <div class="col-md-4 servicio">
-          <img src="img/servicio3.jpg" class="img-fluid" alt="Automatización de sistemas">
-          <h3>Automatización y Control</h3>
-          <p>Soluciones IoT, temporización, regulación automática y ahorro energético.</p>
+    </header>
+
+    <main>
+        <div id="servicios">
+            <div id="titulo-servicio">
+                <img src="img/icono-mp.png" alt="">
+                <h2>Servicios</h2>
+            </div>
+            <div id="los-servicios">
+                <div id="columnas">
+                    <div id="service">
+                        <img src="img/servicio-uno.png" alt="instalacion de aire acondicionado">
+                        <h3>Aires Acondicionados</h3>
+                        <img src="img/franja.png" alt="">
+                        <p>Mantenimiento mensual preventivo correctivo, diagnóstico y reparación. Movimiento de equipos, instalación de equipos mini split Multisplit, piso techos. Limpieza de unidades frigoríficas.
+                            </p>
+                    </div>
+                    <div id="service">
+                        <img src="img/servicio-dos.png" alt="empresas de climatizacion">
+                        <h3>Calefacción Central</h3>
+                        <img src="img/franja.png" alt="">
+                        <p>Mantenimiento correctivo preventivo, recambio tarjetas electrónicas. Automatismo industrial analógicos. Reparación de turbinas, recambio compresores 
+                        </p>
+                    </div>
+                    <div id="service">
+                        <img src="img/servicio-tres.png" alt="colocacion de aire acondicionado">
+                        <h3>Refrigeración</h3>
+                        <img src="img/franja.png" alt="">
+                        <p>Diagnóstico y reparación de equipos frigoríficos y de líneas de fríos. Recambio de compresores, automatismos instalación eléctrica equipos digitales. 
+                        </p>
+                    </div>
+                </div>
+                <div id="columnas">
+                    <div id="service">
+                          <div id="carousel" class="carousel slide" data-pause="false" data-interval="1500">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img class="d-block w-100" src="img/cosechadora.png" alt="First slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100" src="img/furgon.png" alt="Second slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100" src="img/bmw.png" alt="Third slide">
+                              </div>
+                            </div>
+                          </div>
+                        <h3>REFRIGERACIÓN, CALEFACCIÓN Y CLIMATIZACIÓN MOVIL.</h3>
+                        <img src="img/franja.png" alt="">
+                        <p>Reparación y mantenimiento de Aire Acondicionado y equipos de frío movil.</p>
+                    </div>
+                    <div id="service">
+                        <img src="img/servicio-cinco.png" alt="empresas de instalacion de aires acondicionados">
+                        <h3>Mantenimiento y Reparación</h3>
+                        <img src="img/franja.png" alt="">
+                        <p>Circuitos frigoríficos, centrales de fríos,  rooftop, chillers, vrv, splits, cámaras frigoríficas, heladeras comerciales, líneas de fríos, Instalaciones y remoción es de splits.</p>
+                    </div>
+                    <div id="service">
+                        <img src="img/servicio-seis.png" alt="instalacion de aire acondicionado precio">
+                        <h3>Limpieza Profesional a Equipos</h3>
+                        <img src="img/franja.png" alt="">
+                        <p>Mantenimiento, service y reparacion de equipos fríos.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="boton">
+                <a href="#footer" id="boton"> Contactanos!</a>
+            </div>
         </div>
-      </div>
-    </section>
+        <div id="nos-eligen">
+            <div id="titulo-ne">
+                <img src="img/icono-mp.png" alt="">
+                <h2>Por qué nos eligen</h2>
+                <p>Nos destacamos por brindar un servicio de calidad con la atención personalizada que te mereces!</p>
+            </div>
+            <div id="razones">
+                <div id="razon">
+                    <img src="img/abonos.png" alt="">
+                    <h3>Sistemas de Abonos</h3>
+                    <p id="abonos">Visitas fijadas para lograr un mantenimiento preventivo y/o correctivo.</p>
+                </div>
+                <div id="razon">
+                    <img src="img/atencion.png" alt="">
+                    <h3>Atención Personalizada</h3>
+                    <p>Contamos con un equipo especializado para asesorarte en cualquier momento.</p>
+                </div>
+                <div id="razon">
+                    <img src="img/cobertura.png" alt="">
+                    <h3>Cobertura Nacional</h3>
+                    <p id="abonos">Llegamos a cualquier parte del territorio argentino.</p>
+                </div>
+                <div id="razon">
+                    <img src="img/urgencia.png" alt="">
+                    <h3>Servicio de Urgencias las 24 horas</h3>
+                    <p>Disponibles las 24 horas para nuestros clientes atendiendo cualquier imprevisto.</p>
+                </div>
+                <div id="razon">
+                    <img src="img/garantia.png" alt="">
+                    <h3>Garantia</h3>
+                    <p id="abonos">Los trabajos están cubiertos por nuestra garantía.</p>
+                </div>
+            </div>
+        </div>
+        <div id="clientes">
+            <div id="titulo-clientes">
+                <div id="fondo-titulo">
+                    <h2>Clientes</h2>
+                    <img src="img/franja2.png" alt="">
+                </div>
+            </div>
+            <div id="logos-clientes">
+                <div id="logos">
+                    <img src="img/cliente-uno.png" alt="">
+                </div>
+                <div id="logos">
+                    <img src="img/cliente-dos.png" alt="">
+                </div>
+                <div id="logos">
+                    <img src="img/cliente-tres.png" alt="">
+                </div>
+                <div id="logos">
+                    <img src="img/cliente-cuatro.png" alt="">
+                </div>
+                <div id="logos">
+                    <img src="img/cliente-cinco.png" alt="">
+                </div>
+                <div id="logos">
+                    <img src="img/cliente-seis.png" alt="">
+                </div>
+            </div>
+            <div id="categorias">
+                <div id="logo-categoria">
+                    <img src="img/centros-medicos.png" alt="">
+                    <h3>Centros Medicos</h3>
+                </div>
+                <div id="logo-categoria">
+                    <img src="img/hoteleria.png" alt="">
+                    <h3>Hotelería</h3>
+                </div>
+                <div id="logo-categoria">
+                    <img src="img/supermercados.png" alt="">
+                    <h3>Supermercados</h3>
+                </div>
+                <div id="logo-categoria">
+                    <img src="img/oficinas.png" alt="">
+                    <h3>Oficinas</h3>
+                </div>
+                <div id="logo-categoria">
+                    <img src="img/centro-de-datos.png" alt="">
+                    <h3>Centro de Datos</h3>
+                </div>
+                <div id="logo-categoria">
+                    <img src="img/restaurante-bar.png" alt="">
+                    <h3>Restaurant/Bar</h3>
+                </div>
+                <div id="logo-categoria">
+                    <img src="img/frigorifico.png" alt="">
+                    <h3>Frigoríficos</h3>
+                </div>
+            </div>
+        </div>
 
-    <section class="contacto text-center">
-      <h2>Contactanos</h2>
-      <p>Teléfono / WhatsApp: <a href="tel:+543625490089">+54 3624 00 0000</a></p>
-      <p>Email: <a href="mailto:aircool.integral@gmail.com">aircool.refrigeracion@gmail.com</a></p>
-      <a href="https://wa.me/543625490089" target="_blank" class="btn-whatsapp">Enviar mensaje por WhatsApp</a>
-    </section>
-  </main>
+        <!--CLIENTES SLIDER MOBILE-->
 
-  <footer>
-    <p>&copy; 2025 Aircool Refrigeración. Todos los derechos reservados.</p>
-  </footer>
+        <div id="clientes-slider">
+            <div id="titulo-clientes-slider">
+                <div id="fondo-titulo-slider">
+                    <h2>Clientes</h2>
+                    <img src="img/franja2.png" alt="">
+                </div>
+            </div>
+            <div id="slider">
+                <div id="logos-clientes-slider">
+                    <div id="logos-slider">
+                        <img src="img/cliente-uno.png" alt="">
+                    </div>
+                    <div id="logos-slider">
+                        <img src="img/cliente-dos.png" alt="">
+                    </div>
+                    <div id="logos-slider">
+                        <img src="img/cliente-tres.png" alt="">
+                    </div>
+                    <div id="logos-slider">
+                        <img src="img/cliente-cuatro.png" alt="">
+                    </div>
+                    <div id="logos-slider">
+                        <img src="img/cliente-cinco.png" alt="">
+                    </div>
+                    <div id="logos-slider">
+                        <img src="img/cliente-seis.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="categoria-mobile">
+                <div id="categorias-slider">
+                    <div id="logo-categoria-slider">
+                        <img src="img/centros-medicos.png" alt="">
+                        <h3>Centros Medicos</h3>
+                    </div>
+                    <div id="logo-categoria-slider">
+                        <img src="img/hoteleria.png" alt="">
+                        <h3>Hotelería</h3>
+                    </div>
+                    <div id="logo-categoria-slider">
+                        <img src="img/supermercados.png" alt="">
+                        <h3>Supermercados</h3>
+                    </div>
+                </div>
+                <div id="categorias-slider">
+                    <div id="logo-categoria-slider">
+                        <img src="img/oficinas.png" alt="">
+                        <h3>Oficinas</h3>
+                    </div>
+                    <div id="logo-categoria-slider">
+                        <img src="img/centro-de-datos.png" alt="">
+                        <h3>Centro de Datos</h3>
+                    </div>
+                    <div id="logo-categoria-slider">
+                        <img src="img/frigorifico.png" alt="">
+                        <h3>Frigoríficos</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+        <!--CLIENTES SLIDER MOBILE FIN-->
+
+
+        <div id="about">
+            <div id="info">
+                <div id="texto-about">
+                    <h2>Quiénes somos </h2><br>
+                    <p>Hace más de 10 años nació MB refrigeraciones como una empresa de soluciones inteligentes que abarca desde el servicio y mantenimiento de equipos frigorificos y comerciales, hasta el alquiler de Camaras de frío.</p>
+                    <p>Hoy en día cuenta con un equipo de profesionales - con cobertura en todo el territorio nacional - capaz de responder y atender cualquier problema de refrigeración de pequeñas y grandes empresas e instituciones, brindando asesoramiento personalizado y atención de primera calidad.</p>
+                    <div id="boton-llamada"><a href="">
+                        <div id="icono-llamada">
+                            <img src="img/call.png" alt="icono de llamada">
+                        </div>
+                        <div id="about-boton">
+                            <p>Llamanos hoy!</p>
+                            <a href="tel:+549111532410895">(011) 153241-0895</a>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                <div id="img-about">
+                    <img src="img/img-about.png" alt="colocacion de aire acondicionado">
+                </div>
+            </div>
+            <div class="parrafo-seo seo">
+                <div id="texto-about">
+                    <p>La instalación de aire acondicionado en ambientes laborales de edificio, comercial o de grandes superficies como industrias supone un mejor rendimiento de productividad, mayor bienestar para quienes trabajan, climatización eficiente, pareja, con mejor circulación de aire y menor gasto energético y económico gracias a la optimización de consumo. Verdaderos entornos con clima interno controlado y una gran forma de regular la temperatura, la humedad y la higiene en estos espacios.</p>
+                    <p>Para una correcta colocación y asesoramiento, es fundamental contar con una firma especializada en climatización y aire acondicionado. En MB Refrigeración sabemos qué productos se adaptan mejor para sus capacidades, nos especializamos en la colocación de aire acondicionado con la máxima eficacia en diseño y montaje de frío-calor industrial, y también en el diagnóstico, mantenimiento periódico preventivo-correctivo, limpieza de filtros, reposición de gas y reparación de estos equipos, en pisos, Split o techos ofreciendo un servicio eficiente y confiable más allá de la puesta en funcionamiento. </p>
+                    <div id="info" class="if-02 reverse">
+                        <div id="img-about">
+                            <img src="img/home-3.png" alt="empresas de instalacion de aires acondicionados">
+                        </div>
+                        <div id="texto-about">
+                            <p>Las empresas de climatización como la nuestra, garantizamos altos niveles de eficiencia, sostenibilidad, excelente ejercicio y óptima conservación una vez colocados en grandes instalaciones para que realmente puedas disfrutar de ambientes limpios, frescos y sanos en cualquier época del año.</p>
+                            <p>Si estás buscando instalar estos equipos y luego mantenerlos en las mejores condiciones, contactanos, contamos con una probada experiencia en instalación de aire acondicionado industrial y podemos ofrecerte las soluciones justas que estás buscando para tu entorno. Hacemos alianza con las primeras marcas y fabricantes de repuestos y accesorios para asegurarte contar con la más elevada calidad de servicio, la energía más competente instalada y la garantía de que tu aire acondicionado ¡funcionará sin dificultades!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contadores">
+                <div id="contador">
+                    <img src="img/clientes.png" alt="">
+                    <h3>+500</h3>
+                    <p>Clientes Satisfechos</p>
+                </div>
+                <div id="contador">
+                    <img src="img/instalaciones.png" alt="">
+                    <h3>+850</h3>
+                    <p>Instalaciones Realizadas</p>
+                </div>
+                <div id="contador">
+                    <img src="img/profesionales.png" alt="">
+                    <h3>+30</h3>
+                    <p>Profesionales Capacitados</p>
+                </div>
+                <div id="contador">
+                    <img src="img/calidad.png" alt="">
+                    <h3>100%</h3>
+                    <p>Calidad Garantizada</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer">
+            <div id="titulo-footer">
+                <h2>Solicita Presupuesto!</h2>
+            </div>
+            <div id="datos">
+                <div id="dato-contacto">
+                    <div id="datocon">
+                        <img src="img/call.png" alt="">
+                        <p> <a href="tel:+549111532410895">(011) 153241-0895</a></p>
+                    </div>
+                    <div id="datocon">
+                        <img src="img/mensaje.png" alt="">
+                        <p> <a href="mailto:info@mbrefrigeracion.com.ar">info@mbrefrigeracion.com.ar</a></p>
+                    </div>
+                    <div id="datocon">
+                        <img src="img/mapa.png" alt="">
+                        <p> <a href="#"> Concejal Natalio Querido 1989 <br> Vicente López, Bs. As.</a></p>
+                    </div>
+                </div>
+                <div id="formulario">
+                    <form action="gracias.php" method="POST">
+                        <input type="text" name="name" id="name" placeholder="Nombre y Apellido">
+                        <input type="text" name="telf" id="telf" placeholder="Telefono">
+                        <input type="text" name="email" id="email" placeholder="Correo">
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <div style="margin-bottom: 10px;" class="g-recaptcha" data-sitekey="6LcdbpUaAAAAAFT6CGRGxzBF0GS8ZsgbYNqrB9m0" data-callback="recaptcha_callback"></div>
+                        <input id="enviar" type="submit" value="Enviar!" disabled>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="copyright">
+            <h4>Design by <a href="https://imactions.com/" target="_blank">Imactions</a></h4>
+        </div>
+
+            <!-- WhatsHelp.io widget -->
+ <script type="text/javascript">
+    (function () {
+    var options = {
+    whatsapp: "+5491132410895", // WhatsApp number
+    company_logo_url: "https://www.mbrefrigeracion.com.ar/img/favicon-wp.png", // URL of company logo (png, jpg, gif)
+    greeting_message: "Hola, cómo podemos ayudarte? Envianos tu mensaje.", // Text of greeting message
+    call_to_action: "Contacto", // Call to action
+    position: "right", // Position may be 'right' or 'left'
+    };
+    var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; 
+    s.src = '//imactions.com/boton-whatsapp/init.js?v='+Date.now();
+    s.onload = function () { ImactionsBoton.init(options);};
+    var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    
+    })();
+</script>
+<!-- /WhatsHelp.io widget -->
+
+    </footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/bootstrap"></script>
+
+<script>
+
+$("#carousel").on("mouseenter",function() {
+    $(this).carousel('cycle');
+  }).on("mouseleave", function() {
+    $(this).carousel('pause');
+  });
+</script>
+
+<script type="text/javascript">
+    function recaptcha_callback(){
+      //alert("callback working");
+      document.getElementById('enviar').disabled = false;
+    }
+</script>
+
+
+    
 </body>
 </html>
