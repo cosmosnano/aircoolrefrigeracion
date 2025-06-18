@@ -9,30 +9,67 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    body { font-family: 'Poppins', sans-serif; }
-    header, footer { background-color: #002c5f; color: white; padding: 20px; text-align: center; }
-    #logo img { max-height: 80px; }
-    .servicios { padding: 40px 20px; background-color: #f9f9f9; }
-    .servicio { margin-bottom: 30px; }
-    .servicio h3 { margin-top: 15px; }
-    .contacto { background-color: #f0f0f0; padding: 30px; }
-    .btn-whatsapp { background-color: #25d366; color: white; border: none; padding: 10px 20px; border-radius: 25px; text-decoration: none; display: inline-block; font-size: 1.1em; margin: 2px; transition: box-shadow 0.2s; }
-    .btn-whatsapp:hover { background-color: #1ebe5d; box-shadow: 0 2px 8px #25d36633; }
-    .btn-email { background-color: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 25px; text-decoration: none; display: inline-block; font-size: 1.1em; margin: 2px; transition: box-shadow 0.2s; }
-    .btn-email:hover { background-color: #0056b3; box-shadow: 0 2px 8px #007bff33; }
-    .btn-facebook { background-color: #3b5998; color: white; border: none; padding: 10px 20px; border-radius: 25px; text-decoration: none; display: inline-block; font-size: 1.1em; margin: 2px; transition: box-shadow 0.2s; }
-    .btn-facebook:hover { background-color: #2d4373; box-shadow: 0 2px 8px #3b599833; }
-    .btn-instagram { background-color: #E4405F; color: white; border: none; padding: 10px 20px; border-radius: 25px; text-decoration: none; display: inline-block; font-size: 1.1em; margin: 2px; transition: box-shadow 0.2s; }
-    .btn-instagram:hover { background-color: #c13584; box-shadow: 0 2px 8px #E4405F33; }
-    .btn-ubicacion { background-color: #6c757d; color: white; border: none; padding: 10px 20px; border-radius: 25px; text-decoration: none; display: inline-block; font-size: 1.1em; margin: 2px; transition: box-shadow 0.2s; }
-    .btn-ubicacion:hover { background-color: #495057; box-shadow: 0 2px 8px #6c757d33; }
-    .dropdown-menu {
-      max-height: 300px;
-      overflow-y: auto;
-      font-size: 0.98em;
+    /* Tarjetas modernas para Misión, Visión y Valores con la paleta propuesta */
+    .card-mvv {
+      border-radius: 18px;
+      box-shadow: 0 4px 24px rgba(56,135,136,0.10);
+      padding: 2.2rem 1.5rem 1.5rem 1.5rem;
+      margin-bottom: 2rem;
+      border-left: 8px solid #388788;
+      background: #f5f5f5;
+      position: relative;
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-align: center;
     }
-    .carousel-inner { max-height: 400px; }
-    .carousel-inner img { object-fit: cover; height: 400px; width: 100%; }
+    .card-mvv .icon-mvv {
+      font-size: 2.5rem;
+      margin-bottom: 0.7rem;
+      color: #388788;
+    }
+    .card-mvv.card-vision {
+      border-left-color: #27605e;
+    }
+    .card-mvv.card-vision .icon-mvv {
+      color: #27605e;
+    }
+    .card-mvv.card-valores {
+      border-left-color: #a52520;
+    }
+    .card-mvv.card-valores .icon-mvv {
+      color: #a52520;
+    }
+    .card-mvv:hover {
+      transform: translateY(-6px) scale(1.03);
+      box-shadow: 0 8px 32px rgba(56,135,136,0.15);
+    }
+    .navbar, .navbar.bg-primary, .navbar-dark.bg-primary, .navbar.sticky-top {
+      background-color: #388788 !important;
+    }
+    .navbar .nav-link.active, .navbar .nav-link:focus, .navbar .nav-link:hover {
+      color: #a52520 !important;
+    }
+    .navbar .nav-link, .navbar .navbar-brand {
+      color: #fff !important;
+    }
+    .carousel-inner {
+      max-height: 400px;
+      min-height: 220px;
+    }
+    .carousel-inner img {
+      height: 400px;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 12px;
+      border: 3px solid #388788;
+    }
+    @media (max-width: 768px) {
+      .carousel-inner,
+      .carousel-inner img {
+        max-height: 220px;
+        height: 220px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -171,35 +208,39 @@
     <div class="row g-4">
       <div class="col-12">
         <div class="p-4 rounded" style="background: #e3f0fa; border-left: 6px solid #007bff;">
-          <h2 class="mb-2">¿QUIÉNES SOMOS?</h2>
-          <h5 class="mb-3">CONTACTANOS</h5>
+          <h2 class="mb-2 text-center">¿QUIÉNES SOMOS?</h2>
           <p>Somos una empresa con más de 15 años de experiencia en el rubro. Comenzamos como un emprendimiento familiar, trabajando en hogares, y el desafío constante nos llevó al mercado de la refrigeración industrial y comercial. Entendemos a la perfección las necesidades de nuestros clientes. Nos forjamos con el lema "Hacemos tu vida más fácil" y hoy, bajo la consigna "Toda la ciencia al alcance de tus manos", buscamos ser referentes en el NEA en mantenimiento electromecánico, climatización y asesoramiento técnico, cumpliendo con los más altos estándares, pero sobre todo, con la aprobación de nuestros clientes.</p>
         </div>
       </div>
-      <div class="col-12">
-        <div class="p-4 rounded" style="background: #f0f4f8; border-left: 6px solid #002c5f;">
-          <h2 class="mb-2">Valores de la empresa</h2>
-          <ul>
-            <li><strong>Excelencia</strong> – Buscamos superar las expectativas con calidad técnica y humana.</li>
-            <li><strong>Transparencia</strong> – Actuamos con claridad, honestidad y compromiso.</li>
-            <li><strong>Vocación de servicio</strong> – Servimos con entrega, empatía y responsabilidad.</li>
-            <li><strong>Formación continua</strong> – Creemos en el poder de enseñar y aprender siempre.</li>
-            <li><strong>Innovación</strong> – Integramos nuevas tecnologías para soluciones inteligentes.</li>
-            <li><strong>Sostenibilidad</strong> – Promovemos prácticas responsables con el ambiente y la sociedad.</li>
-            <li><strong>Cercanía</strong> – Estamos donde se nos necesita, con trato humano y profesional.</li>
-          </ul>
+      <div class="row g-4 justify-content-center align-items-stretch">
+        <div class="col-12 col-md-4 d-flex">
+          <div class="card-mvv card-valores w-100">
+            <div class="icon-mvv"><i class="fas fa-gem"></i></div>
+            <h2 class="mb-2">Valores de la empresa</h2>
+            <ul>
+              <li><i class="fas fa-star me-2" style="color:#a52520"></i><strong>Excelencia</strong> – Buscamos superar las expectativas con calidad técnica y humana.</li>
+              <li><i class="fas fa-balance-scale me-2" style="color:#a52520"></i><strong>Transparencia</strong> – Actuamos con claridad, honestidad y compromiso.</li>
+              <li><i class="fas fa-hands-helping me-2" style="color:#a52520"></i><strong>Vocación de servicio</strong> – Servimos con entrega, empatía y responsabilidad.</li>
+              <li><i class="fas fa-graduation-cap me-2" style="color:#a52520"></i><strong>Formación continua</strong> – Creemos en el poder de enseñar y aprender siempre.</li>
+              <li><i class="fas fa-lightbulb me-2" style="color:#a52520"></i><strong>Innovación</strong> – Integramos nuevas tecnologías para soluciones inteligentes.</li>
+              <li><i class="fas fa-leaf me-2" style="color:#a52520"></i><strong>Sostenibilidad</strong> – Promovemos prácticas responsables con el ambiente y la sociedad.</li>
+              <li><i class="fas fa-users me-2" style="color:#a52520"></i><strong>Cercanía</strong> – Estamos donde se nos necesita, con trato humano y profesional.</li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="col-12 col-md-6">
-        <div class="p-4 rounded" style="background: #e3f0fa; border-left: 6px solid #007bff;">
-          <h2 class="mb-2">MISIÓN</h2>
-          <p>Brindar soluciones integrales en refrigeración y climatización, garantizando continuidad operativa, eficiencia energética y seguridad. Acompañamos a nuestros clientes con atención cercana, diagnóstico preciso y respuesta ágil. A la vez, formamos técnicos e instaladores con criterio, ética y conocimiento, impulsando una red profesional capaz de transformar el sector con responsabilidad y vocación de servicio.</p>
+        <div class="col-12 col-md-4 d-flex">
+          <div class="card-mvv w-100">
+            <div class="icon-mvv"><i class="fas fa-bullseye"></i></div>
+            <h2 class="mb-2">MISIÓN</h2>
+            <p>Brindar soluciones integrales en refrigeración y climatización, garantizando continuidad operativa, eficiencia energética y seguridad. Acompañamos a nuestros clientes con atención cercana, diagnóstico preciso y respuesta ágil. A la vez, formamos técnicos e instaladores con criterio, ética y conocimiento, impulsando una red profesional capaz de transformar el sector con responsabilidad y vocación de servicio.</p>
+          </div>
         </div>
-      </div>
-      <div class="col-12 col-md-6">
-        <div class="p-4 rounded" style="background: #f0f4f8; border-left: 6px solid #002c5f;">
-          <h2 class="mb-2">VISIÓN</h2>
-          <p>Ser líderes en refrigeración industrial, comercial y familiar en el NEA, distinguiéndonos por la excelencia técnica, la rapidez operativa y el compromiso humano. Proyectamos un futuro donde la innovación, la formación profesional y los valores se integren para transformar el servicio técnico en una experiencia confiable, educativa y sustentable.</p>
+        <div class="col-12 col-md-4 d-flex">
+          <div class="card-mvv card-vision w-100">
+            <div class="icon-mvv"><i class="fas fa-eye"></i></div>
+            <h2 class="mb-2">VISIÓN</h2>
+            <p>Ser líderes en refrigeración industrial, comercial y familiar en el NEA, distinguiéndonos por la excelencia técnica, la rapidez operativa y el compromiso humano. Proyectamos un futuro donde la innovación, la formación profesional y los valores se integren para transformar el servicio técnico en una experiencia confiable, educativa y sustentable.</p>
+          </div>
         </div>
       </div>
       <div class="col-12">
@@ -223,81 +264,44 @@
 
     <!-- Secciones de Servicios Específicos -->
     <section class="container my-5" id="diseno-proyectos">
-      <h3>DISEÑO Y CÁLCULO DE PROYECTOS</h3>
-      <p>Descripción del servicio...</p>
+      <div class="card-servicio">
+        <h3><i class="fas fa-drafting-compass me-2 text-primary"></i>DISEÑO Y CÁLCULO DE PROYECTOS</h3>
+        <p>Descripción del servicio...</p>
+      </div>
     </section>
     <section class="container my-5" id="balance-termico">
-      <h3>CÁLCULO DE BALANCE TÉRMICO</h3>
-      <p>Descripción del servicio...</p>
+      <div class="card-servicio">
+        <h3><i class="fas fa-thermometer-half me-2 text-danger"></i>CÁLCULO DE BALANCE TÉRMICO</h3>
+        <p>Descripción del servicio...</p>
+      </div>
     </section>
     <section class="container my-5" id="diagnostico-mantenimiento">
-      <h3>DIAGNÓSTICO TÉCNICO Y PLANIFICACIÓN DE MANTENIMIENTO INTEGRAL</h3>
-      <p>Descripción del servicio...</p>
+      <div class="card-servicio">
+        <h3><i class="fas fa-stethoscope me-2 text-info"></i>DIAGNÓSTICO TÉCNICO Y PLANIFICACIÓN DE MANTENIMIENTO INTEGRAL</h3>
+        <p>Descripción del servicio...</p>
+      </div>
     </section>
     <section class="container my-5" id="instalacion-reparacion">
-      <h3>INSTALACIÓN, REPARACIÓN Y PUESTA EN MARCHA DE SISTEMAS DE REFRIGERACIÓN Y CLIMATIZACIÓN</h3>
-      <p>Descripción del servicio...</p>
+      <div class="card-servicio">
+        <h3><i class="fas fa-tools me-2 text-secondary"></i>INSTALACIÓN, REPARACIÓN Y PUESTA EN MARCHA DE SISTEMAS DE REFRIGERACIÓN Y CLIMATIZACIÓN</h3>
+        <p>Descripción del servicio...</p>
+      </div>
     </section>
     <section class="container my-5" id="ingenieria-normativas">
-      <h3>SERVICIOS DE INGENIERÍA APLICADA Y ADECUACIÓN A NORMATIVAS VIGENTES</h3>
-      <p>Descripción del servicio...</p>
+      <div class="card-servicio">
+        <h3><i class="fas fa-cogs me-2 text-primary"></i>SERVICIOS DE INGENIERÍA APLICADA Y ADECUACIÓN A NORMATIVAS VIGENTES</h3>
+        <p>Descripción del servicio...</p>
+      </div>
     </section>
     <section class="container my-5" id="capacitacion-asesoramiento">
-      <h3>CAPACITACIÓN TÉCNICA Y ASESORAMIENTO CONTINUO</h3>
-      <p>Descripción del servicio...</p>
+      <div class="card-servicio">
+        <h3><i class="fas fa-chalkboard-teacher me-2 text-success"></i>CAPACITACIÓN TÉCNICA Y ASESORAMIENTO CONTINUO</h3>
+        <p>Descripción del servicio...</p>
+      </div>
     </section>
 
     <!-- Detalles de cada servicio -->
-    <section class="container my-5" id="detalle-servicio1">
-      <h3>Mantenimiento de Aires Acondicionados</h3>
-      <ul>
-        <li>Limpieza profunda de unidades split, piso techo, y centrales.</li>
-        <li>Verificación de presiones, temperaturas y rendimiento.</li>
-        <li>Control eléctrico y seguridad del sistema.</li>
-        <li>Carga de gas refrigerante (cuando corresponde).</li>
-      </ul>
-    </section>
-    <section class="container my-5" id="detalle-servicio2">
-      <h3>Refrigeración Comercial e Industrial</h3>
-      <ul>
-        <li>Instalación y reparación de cámaras frigoríficas.</li>
-        <li>Servicio técnico para heladeras comerciales, exhibidoras, mostradores, etc.</li>
-        <li>Mantenimiento preventivo para supermercados, carnicerías, panaderías, etc.</li>
-        <li>Reconversión de equipos para eficiencia energética.</li>
-      </ul>
-    </section>
-    <section class="container my-5" id="detalle-servicio3">
-      <h3>Automatización y Control de Sistemas</h3>
-      <ul>
-        <li>Soluciones con sensores IoT para monitoreo remoto.</li>
-        <li>Controladores de temperatura, presión y corriente.</li>
-        <li>Desarrollo de sistemas automáticos para ahorro energético y alarmas técnicas.</li>
-        <li>Integración de microcontroladores (ESP32, PLC, etc.).</li>
-      </ul>
-    </section>
-    <section class="container my-5" id="detalle-servicio4">
-      <h3>Instalaciones Nuevas</h3>
-      <ul>
-        <li>Asesoramiento técnico, dimensionamiento de equipos.</li>
-        <li>Diseño e instalación de sistemas de climatización o refrigeración a medida.</li>
-        <li>Montaje eléctrico y puesta en marcha.</li>
-      </ul>
-    </section>
-    <section class="container my-5" id="detalle-servicio5">
-      <h3>Diagnóstico Técnico y Presupuestos Personalizados</h3>
-      <ul>
-        <li>Diagnóstico detallado con instrumentos profesionales.</li>
-        <li>Informes técnicos para empresas y comercios.</li>
-        <li>Presupuestos con o sin repuestos, con garantía escrita.</li>
-      </ul>
-    </section>
-    <section class="container my-5" id="detalle-servicio6">
-      <h3>Asistencia Técnica Urgente</h3>
-      <ul>
-        <li>Servicios de emergencia en horarios extendidos (opcional).</li>
-        <li>Cobertura en Resistencia y alrededores.</li>
-      </ul>
-    </section>
+    
 
     <!-- Sección Nos Eligen -->
     <section class="container my-5" id="nos-eligen">
@@ -391,6 +395,37 @@
       var myCarousel = document.querySelector('#carrusel-obra');
       if (myCarousel) {
         new bootstrap.Carousel(myCarousel, { wrap: true, interval: 8000 });
+      }
+
+      // Quitar la clase active de todos los nav-link
+      var navLinks = document.querySelectorAll('.nav-link');
+      navLinks.forEach(function(el) {
+        el.classList.remove('active');
+      });
+
+      var path = window.location.pathname;
+      var page = path.split("/").pop();
+
+      var serviciosPages = [
+        "diseno-proyectos.html", "balance-termico.html", "diagnostico-mantenimiento.html",
+        "instalacion-reparacion.html", "ingenieria-normativas.html", "capacitacion-asesoramiento.html"
+      ];
+      var institutoPages = ["cursos-rapidos.html", "diplomatura.html"];
+      var innovacionPages = ["id.html", "iothing.html"];
+
+      if (institutoPages.includes(page)) {
+        var instituto = document.getElementById("navbarDropdownInstituto");
+        if (instituto) instituto.classList.add("active");
+      } else if (serviciosPages.includes(page)) {
+        var servicios = document.getElementById("navbarDropdownServicios");
+        if (servicios) servicios.classList.add("active");
+      } else if (innovacionPages.includes(page)) {
+        var innovacion = document.getElementById("navbarDropdownInnovacion");
+        if (innovacion) innovacion.classList.add("active");
+      } else if (page === "" || page === "index.html") {
+        // Resalta Inicio solo en la página principal
+        var inicio = document.querySelector('.nav-link[aria-current="page"]');
+        if (inicio) inicio.classList.add("active");
       }
     });
   </script>

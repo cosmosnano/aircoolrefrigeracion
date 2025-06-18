@@ -36,7 +36,7 @@
             <a class="nav-link" href="index.html">Inicio</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownServicios" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServicios" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Servicios
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownServicios">
@@ -49,11 +49,11 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownInstituto" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownInstituto" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Instituto
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownInstituto">
-              <li><a class="dropdown-item active" href="cursos-rapidos.html">Cursos Acelerados</a></li>
+              <li><a class="dropdown-item" href="cursos-rapidos.html">Cursos Acelerados</a></li>
               <li><a class="dropdown-item" href="diplomatura.html">Diplomatura</a></li>
             </ul>
           </li>
@@ -73,17 +73,6 @@
             <a class="nav-link" href="contacto.html">Contacto</a>
           </li>
         </ul>
-        <div class="d-flex align-items-center">
-          <a href="https://wa.me/5493625490089" class="me-2" target="_blank" title="WhatsApp">
-            <i class="fab fa-whatsapp fa-xl" style="color:#25d366;"></i>
-          </a>
-          <a href="https://www.instagram.com/aircoolrefrigeracion/" class="me-2" target="_blank" title="Instagram">
-            <i class="fab fa-instagram fa-xl" style="color:#E4405F;"></i>
-          </a>
-          <a href="https://www.facebook.com/aircool.refrigeracion/" class="me-2" target="_blank" title="Facebook">
-            <i class="fab fa-facebook fa-xl" style="color:#3b5998;"></i>
-          </a>
-        </div>
       </div>
     </div>
   </nav>
@@ -101,5 +90,34 @@
     <p>&copy; 2025 Aircool Refrigeración. Todos los derechos reservados.</p>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var navLinks = document.querySelectorAll('.nav-link');
+      navLinks.forEach(function(el) {
+        el.classList.remove('active');
+      });
+      var path = window.location.pathname;
+      var page = path.split("/").pop();
+      var serviciosPages = [
+        "diseno-proyectos.html", "balance-termico.html", "diagnostico-mantenimiento.html",
+        "instalacion-reparacion.html", "ingenieria-normativas.html", "capacitacion-asesoramiento.html"
+      ];
+      var institutoPages = ["cursos-rapidos.html", "diplomatura.html"];
+      var innovacionPages = ["id.html", "iothing.html"];
+      if (institutoPages.includes(page)) {
+        var instituto = document.getElementById("navbarDropdownInstituto");
+        if (instituto) instituto.classList.add("active");
+      } else if (serviciosPages.includes(page)) {
+        var servicios = document.getElementById("navbarDropdownServicios");
+        if (servicios) servicios.classList.add("active");
+      } else if (innovacionPages.includes(page)) {
+        var innovacion = document.getElementById("navbarDropdownInnovacion");
+        if (innovacion) innovacion.classList.add("active");
+      } else if (page === "" || page === "index.html") {
+        var inicio = document.querySelector('.nav-link[aria-current="page"]');
+        if (inicio) inicio.classList.add("active");
+      }
+    });
+  </script>
 </body>
 </html> 
