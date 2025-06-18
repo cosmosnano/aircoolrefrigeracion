@@ -8,9 +8,67 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    body { font-family: 'Poppins', sans-serif; }
-    header, footer { background-color: #002c5f; color: white; padding: 20px; text-align: center; }
-    #logo img { max-height: 80px; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.7;
+      background: #edebeb;
+      color: #222;
+    }
+    :root {
+      --color-cian: #388788;
+      --color-cian-oscuro: #27605e;
+      --color-rojo: #a52520;
+      --color-blanco: #fff;
+      --color-gris-fondo: #edebeb;
+    }
+    .navbar, .navbar.bg-primary, .navbar-dark.bg-primary, .navbar.sticky-top {
+      background-color: var(--color-cian) !important;
+    }
+    .navbar .nav-link.active, .navbar .nav-link:focus, .navbar .nav-link:hover {
+      color: var(--color-rojo) !important;
+    }
+    .navbar .nav-link, .navbar .navbar-brand {
+      color: #fff !important;
+    }
+    .card-mvv {
+      border-radius: 18px;
+      box-shadow: 0 4px 24px rgba(56,135,136,0.10);
+      padding: 2.2rem 1.5rem 1.5rem 1.5rem;
+      margin-bottom: 2rem;
+      border-left: 8px solid var(--color-cian);
+      background: #edebeb;
+      position: relative;
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-align: center;
+    }
+    .card-mvv .icon-mvv {
+      font-size: 2.5rem;
+      margin-bottom: 0.7rem;
+      color: var(--color-cian);
+    }
+    .card-mvv.card-vision {
+      border-left-color: var(--color-cian-oscuro);
+    }
+    .card-mvv.card-vision .icon-mvv {
+      color: var(--color-cian-oscuro);
+    }
+    .card-mvv.card-valores {
+      border-left-color: var(--color-rojo);
+    }
+    .card-mvv.card-valores .icon-mvv {
+      color: var(--color-rojo);
+    }
+    .card-mvv:hover {
+      transform: translateY(-6px) scale(1.03);
+      box-shadow: 0 8px 32px rgba(56,135,136,0.15);
+    }
+    #logo img {
+      max-width: 320px;
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto 10px auto;
+    }
   </style>
 </head>
 <body>
@@ -80,7 +138,7 @@
     <div id="logo">
       <img src="img/logo-aircool.png" alt="Aircool Refrigeración">
     </div>
-    <h1>CAPACITACIÓN TÉCNICA Y ASESORAMIENTO CONTINUO</h1>
+    <h1>Capacitación y Asesoramiento</h1>
   </header>
   <main class="container my-5">
     <h2>CAPACITACIÓN TÉCNICA Y ASESORAMIENTO CONTINUO</h2>
