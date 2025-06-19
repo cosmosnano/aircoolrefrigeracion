@@ -120,6 +120,41 @@
       }
     }
     .text-cian { color: #388788; }
+    .btn-primary, .btn-primary:focus {
+      background: #388788 !important;
+      border: none;
+      border-radius: 2rem;
+      font-weight: 600;
+      box-shadow: 0 2px 12px rgba(56,135,136,0.10);
+      transition: background 0.2s, box-shadow 0.2s;
+    }
+    .btn-primary:hover, .btn-primary:active {
+      background: #a52520 !important;
+      color: #fff !important;
+      box-shadow: 0 4px 24px rgba(165,37,32,0.15);
+    }
+    .btn-whatsapp, .btn-email, .btn-facebook, .btn-instagram, .btn-ubicacion {
+      display: inline-block;
+      margin: 0.3rem 0.4rem;
+      padding: 0.7rem 1.3rem;
+      border-radius: 2rem;
+      font-weight: 600;
+      font-size: 1.08rem;
+      box-shadow: 0 2px 12px rgba(56,135,136,0.10);
+      border: none;
+      transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+      color: #fff !important;
+    }
+    .btn-whatsapp { background: #25d366; }
+    .btn-whatsapp:hover { background: #388788; color: #fff !important; }
+    .btn-email { background: #388788; }
+    .btn-email:hover { background: #a52520; color: #fff !important; }
+    .btn-facebook { background: #3b5998; }
+    .btn-facebook:hover { background: #388788; color: #fff !important; }
+    .btn-instagram { background: #E4405F; }
+    .btn-instagram:hover { background: #388788; color: #fff !important; }
+    .btn-ubicacion { background: #a52520; }
+    .btn-ubicacion:hover { background: #388788; color: #fff !important; }
   </style>
 </head>
 <body>
@@ -370,31 +405,90 @@
 
     <!-- Sección Nos Eligen -->
     <section class="container my-5" id="nos-eligen">
-      <h2 class="text-center mb-4">¿Por qué nos eligen?</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-8">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Experiencia y profesionalismo en cada trabajo.</li>
-            <li class="list-group-item">Atención personalizada y rápida respuesta.</li>
-            <li class="list-group-item">Clientes satisfechos en Resistencia y alrededores.</li>
-            <li class="list-group-item">Uso de tecnología y herramientas de última generación.</li>
-          </ul>
+      <h2 class="text-center mb-4"><i class="fas fa-thumbs-up me-2 text-cian"></i>¿Por qué nos eligen?</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card-mvv h-100 text-center border-0 shadow-sm" style="border-left: 6px solid #388788; background: #f6fcfc;">
+            <div class="icon-mvv"><i class="fas fa-user-tie"></i></div>
+            <h5 class="fw-bold mb-2">Profesionalismo</h5>
+            <p class="mb-0">Técnicos certificados y atención personalizada en cada proyecto.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card-mvv h-100 text-center border-0 shadow-sm" style="border-left: 6px solid #a52520; background: #fdf3f3;">
+            <div class="icon-mvv"><i class="fas fa-bolt"></i></div>
+            <h5 class="fw-bold mb-2">Respuesta Rápida</h5>
+            <p class="mb-0">Soluciones ágiles y eficientes para minimizar tiempos de espera.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card-mvv h-100 text-center border-0 shadow-sm" style="border-left: 6px solid #6c757d; background: #f7f7f7;">
+            <div class="icon-mvv"><i class="fas fa-users"></i></div>
+            <h5 class="fw-bold mb-2">Clientes Satisfechos</h5>
+            <p class="mb-0">Más de 20 años generando confianza en Resistencia y la región.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card-mvv h-100 text-center border-0 shadow-sm" style="border-left: 6px solid #388788; background: #f6fcfc;">
+            <div class="icon-mvv"><i class="fas fa-microchip"></i></div>
+            <h5 class="fw-bold mb-2">Innovación</h5>
+            <p class="mb-0">Tecnología y herramientas de última generación en cada servicio.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contadores de logros -->
+    <section class="container my-5">
+      <div class="row justify-content-center text-center">
+        <div class="col-12 col-md-4 mb-4 mb-md-0">
+          <div class="counter-card p-4 rounded shadow-sm h-100" style="background: #f6fcfc;">
+            <div class="counter-icon mb-2"><i class="fas fa-users fa-2x text-cian"></i></div>
+            <div class="counter-value display-4 fw-bold text-cian" data-target="1200">0</div>
+            <div class="counter-label mt-2">Clientes Satisfechos</div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mb-4 mb-md-0">
+          <div class="counter-card p-4 rounded shadow-sm h-100" style="background: #fdf3f3;">
+            <div class="counter-icon mb-2"><i class="fas fa-cogs fa-2x" style="color:#a52520;"></i></div>
+            <div class="counter-value display-4 fw-bold" style="color:#a52520;" data-target="2000">0</div>
+            <div class="counter-label mt-2">Equipos Atendidos</div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="counter-card p-4 rounded shadow-sm h-100" style="background: #f7f7f7;">
+            <div class="counter-icon mb-2"><i class="fas fa-bolt fa-2x text-cian"></i></div>
+            <div class="counter-value display-4 fw-bold text-cian" data-target="100">0%</div>
+            <div class="counter-label mt-2">Efectividad y Respuesta</div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Sección Nosotros -->
     <section class="container my-5" id="nosotros">
-      <h2 class="text-center mb-4">Sobre Nosotros</h2>
       <div class="row justify-content-center">
         <div class="col-md-8">
-          <p>Somos una empresa familiar con más de 20 años de experiencia en el rubro de la refrigeración y climatización comercial e industrial. Nuestro compromiso es brindar soluciones eficientes, seguras y adaptadas a las necesidades de cada cliente.</p>
+          <div class="card-mvv text-center border-0 shadow-sm" style="background: #f6fcfc; border-left: 6px solid #388788;">
+            <div class="icon-mvv"><i class="fas fa-users"></i></div>
+            <h2 class="mb-2">Sobre Nosotros</h2>
+            <p class="mb-0">Somos una empresa familiar con más de 20 años de experiencia, apasionados por la refrigeración y climatización comercial e industrial. Nos destacamos por la excelencia técnica, la cercanía con nuestros clientes y el compromiso de brindar soluciones eficientes, seguras y a medida. En Aircool, tu tranquilidad es nuestro mayor valor.</p>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- Sección Contactanos -->
     <section class="contacto text-center" id="contacto">
-      <h2>Contactanos</h2>
+      <div class="row justify-content-center mb-4">
+        <div class="col-md-8">
+          <div class="card-mvv text-center border-0 shadow-sm" style="background: #fdf3f3; border-left: 6px solid #a52520;">
+            <div class="icon-mvv"><i class="fas fa-envelope-open-text"></i></div>
+            <h2 class="mb-2">Contactanos</h2>
+            <p class="mb-0">¿Tenés una consulta, necesitás asesoramiento o querés pedir tu presupuesto? Completá el formulario y te responderemos a la brevedad. ¡Estamos para ayudarte!</p>
+          </div>
+        </div>
+      </div>
       <div class="row justify-content-center">
         <div class="col-md-6">
           <form action="https://formsubmit.co/aircool.integral@gmail.com" method="POST" class="p-3 border rounded bg-white" style="text-align:left;">
@@ -492,6 +586,39 @@
         var inicio = document.querySelector('.nav-link[aria-current="page"]');
         if (inicio) inicio.classList.add("active");
       }
+    });
+
+    // Animación de contadores
+    function animateCounter(element, target, isPercent) {
+      let current = 0;
+      const increment = Math.ceil(target / 60);
+      const update = () => {
+        current += increment;
+        if (current >= target) {
+          current = target;
+          if (isPercent) {
+            element.textContent = current + '%';
+          } else {
+            element.textContent = '+' + current.toLocaleString();
+          }
+          return;
+        }
+        if (isPercent) {
+          element.textContent = current + '%';
+        } else {
+          element.textContent = '+' + current.toLocaleString();
+        }
+        requestAnimationFrame(update);
+      };
+      update();
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+      const counters = document.querySelectorAll('.counter-value');
+      counters.forEach(counter => {
+        const target = parseInt(counter.getAttribute('data-target'));
+        const isPercent = counter.textContent.includes('%');
+        animateCounter(counter, target, isPercent);
+      });
     });
   </script>
  </body>
