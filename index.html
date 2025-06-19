@@ -80,15 +80,66 @@
       background: none !important;
     }
     #logo img {
-      max-width: 320px;
-      width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto 10px auto;
+      max-width: 180px;
+      max-height: 60px;
+      margin-bottom: 0;
     }
+    .top-header {
+      padding-top: 0.3rem !important;
+      padding-bottom: 0.3rem !important;
+      min-height: 60px;
+    }
+    .top-header .contact-info a {
+      font-size: 1.05rem;
+      color: #388788 !important;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .top-header .contact-info a:hover {
+      color: #a52520 !important;
+    }
+    .top-header .contact-center a, .top-header .contact-right a {
+      color: #388788 !important;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .top-header .contact-center a:hover, .top-header .contact-right a:hover {
+      color: #a52520 !important;
+    }
+    @media (max-width: 768px) {
+      .top-header {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      #logo img {
+        margin-bottom: 0.5rem;
+        max-width: 140px;
+      }
+      .contact-center, .contact-right {
+        text-align: center !important;
+      }
+    }
+    .text-cian { color: #388788; }
   </style>
 </head>
 <body>
+  <div class="top-header d-flex justify-content-between align-items-center px-3 py-2">
+    <div id="logo">
+      <img src="img/logo-aircool.png" alt="Aircool Refrigeración">
+    </div>
+    <div class="contact-center text-center">
+      <div class="fw-bold small text-uppercase text-cian mb-1">¡Hacé tu consulta ya!</div>
+      <a href="tel:+543625490089" class="text-decoration-none">
+        <i class="fas fa-phone-alt me-1"></i> +54 9 362 549-0089
+      </a>
+    </div>
+    <div class="contact-right text-end">
+      <div class="fw-bold small text-uppercase text-cian mb-1">¡Pedí tu presupuesto!</div>
+      <a href="mailto:aircool.integral@gmail.com" class="text-decoration-none">
+        <i class="fas fa-envelope me-1"></i> aircool.integral@gmail.com
+      </a>
+    </div>
+  </div>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
     <div class="container">
       <div class="d-flex align-items-center">
@@ -153,9 +204,6 @@
   </nav>
 
   <header>
-    <div id="logo">
-      <img src="img/logo-aircool.png" alt="Aircool Refrigeración">
-    </div>
     <div id="carrusel-obra" class="carousel slide my-4" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carrusel-obra" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -215,8 +263,7 @@
       </button>
     </div>
     <h1 class="text-center">Aircool Refrigeración</h1>
-    <p class="text-center">Servicio Técnico, Instalación y Mantenimiento</p>
-    <p class="text-center">Resistencia, Chaco</p>
+    <p class="text-center">Toda la Ciencia al Alcance de tus Manos</p>
   </header>
 
   <!-- Sección Inicio: Bloques de presentación -->
@@ -224,7 +271,7 @@
     <div class="row g-4">
       <div class="col-12">
         <div class="p-4 rounded" style="background: #e3f0fa; border-left: 6px solid #007bff;">
-          <h2 class="mb-2 text-center">¿QUIÉNES SOMOS?</h2>
+          <h2 class="mb-2 text-center"><i class="fas fa-users me-2 text-cian"></i>¿QUIÉNES SOMOS?</h2>
           <p>Somos una empresa con más de 20 años de experiencia en el rubro. Comenzamos como un emprendimiento familiar, trabajando en hogares, y el desafío constante nos llevó al mercado de la refrigeración industrial y comercial. Entendemos a la perfección las necesidades de nuestros clientes. Nos forjamos con el lema "Hacemos tu vida más fácil" y hoy, bajo la consigna "Toda la ciencia al alcance de tus manos", buscamos ser referentes en el NEA en mantenimiento electromecánico, climatización y asesoramiento técnico, cumpliendo con los más altos estándares, pero sobre todo, con la aprobación de nuestros clientes.</p>
         </div>
       </div>
@@ -261,7 +308,7 @@
       </div>
       <div class="col-12">
         <div class="p-4 rounded" style="background: #e9ecef; border-left: 6px solid #6c757d;">
-          <h2 class="mb-2">Compromiso</h2>
+          <h2 class="mb-2"><i class="fas fa-handshake me-2 text-cian"></i>Compromiso</h2>
           <p>Diseñamos respuestas, no improvisamos. Mantenemos lo esencial en marcha: productividad, confort y confianza. En aiRcOol trabajamos con criterio técnico y vocación humana. Prevenir no es opción, es deber. Cumplir no es meta, es punto de partida. Porque el verdadero servicio técnico cuida lo invisible: la tranquilidad de quien confía en nosotros.</p>
         </div>
       </div>
@@ -282,37 +329,39 @@
     <section class="container my-5" id="diseno-proyectos">
       <div class="card-servicio">
         <h3><i class="fas fa-drafting-compass me-2 text-primary"></i>DISEÑO Y CÁLCULO DE PROYECTOS</h3>
-        <p>Descripción del servicio...</p>
+        <p>Desarrollamos soluciones integrales para instalaciones de refrigeración y climatización, adaptadas a las necesidades del cliente. Realizamos planos, selección de equipos, estimación de consumos y previsión de crecimiento.
       </div>
     </section>
     <section class="container my-5" id="balance-termico">
       <div class="card-servicio">
         <h3><i class="fas fa-thermometer-half me-2 text-danger"></i>CÁLCULO DE BALANCE TÉRMICO</h3>
-        <p>Descripción del servicio...</p>
+        <p>Determinamos con precisión las cargas térmicas de espacios y procesos, asegurando el dimensionamiento correcto de sistemas frigoríficos o de climatización para máxima eficiencia energética.
       </div>
     </section>
     <section class="container my-5" id="diagnostico-mantenimiento">
       <div class="card-servicio">
         <h3><i class="fas fa-stethoscope me-2 text-info"></i>DIAGNÓSTICO TÉCNICO Y PLANIFICACIÓN DE MANTENIMIENTO INTEGRAL</h3>
-        <p>Descripción del servicio...</p>
+        <p>Evaluamos el estado de sistemas existentes, proponemos mejoras y diseñamos planes de mantenimiento preventivo y correctivo que minimizan fallas, extienden la vida útil de los equipos y reducen costos operativos.
+
       </div>
     </section>
     <section class="container my-5" id="instalacion-reparacion">
       <div class="card-servicio">
         <h3><i class="fas fa-tools me-2 text-secondary"></i>INSTALACIÓN, REPARACIÓN Y PUESTA EN MARCHA DE SISTEMAS DE REFRIGERACIÓN Y CLIMATIZACIÓN</h3>
-        <p>Descripción del servicio...</p>
+        <p>Ejecutamos instalaciones nuevas, reformas o ampliaciones. Reparamos y dejamos operativos equipos comerciales e industriales con protocolos de prueba, verificación de seguridad y rendimiento.
       </div>
     </section>
     <section class="container my-5" id="ingenieria-normativas">
       <div class="card-servicio">
         <h3><i class="fas fa-cogs me-2 text-primary"></i>SERVICIOS DE INGENIERÍA APLICADA Y ADECUACIÓN A NORMATIVAS VIGENTES</h3>
-        <p>Descripción del servicio...</p>
+        <p>Realizamos intervenciones bajo criterios de ingeniería profesional, asegurando el cumplimiento de normativas técnicas, eléctricas, térmicas y de seguridad laboral, tanto en instalaciones nuevas como existentes.
+
       </div>
     </section>
     <section class="container my-5" id="capacitacion-asesoramiento">
       <div class="card-servicio">
         <h3><i class="fas fa-chalkboard-teacher me-2 text-success"></i>CAPACITACIÓN TÉCNICA Y ASESORAMIENTO CONTINUO</h3>
-        <p>Descripción del servicio...</p>
+        <p>Brindamos formación a técnicos, operarios o personal de mantenimiento. Acompañamos a empresas con asesoramiento permanente para resolver dudas técnicas, optimizar procesos y mantener el conocimiento actualizado.
       </div>
     </section>
 
