@@ -1,0 +1,92 @@
+/* --- VARIABLES Y ESTILOS GENERALES --- */
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7;
+  background-color: #f8f9fa; /* Un gris muy claro para el fondo general */
+  color: #333;
+}
+
+:root {
+  --color-cian: #388788;
+  --color-cian-oscuro: #27605e;
+  --color-rojo: #a52520;
+  --color-blanco: #fff;
+  --color-gris-fondo: #edebeb;
+  --color-gris-claro: #f8f9fa;
+  --color-texto: #333;
+}
+
+.text-cian { color: var(--color-cian); }
+.text-rojo { color: var(--color-rojo); }
+
+/* --- BOTONES --- */
+.btn-rojo {
+  background-color: var(--color-rojo);
+  color: var(--color-blanco);
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid var(--color-rojo);
+}
+
+.btn-rojo:hover {
+  background-color: var(--color-blanco);
+  color: var(--color-rojo);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+
+/* --- ENCABEZADOS DE PÁGINAS DE SERVICIO --- */
+.service-header-dp {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/servicios/diseno-proyectos-header.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 6rem 0;
+    margin-bottom: -1px; /* Evita doble borde al unir con el nav */
+}
+
+.service-header-bt {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/servicios/balance-termico-header.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 6rem 0;
+    margin-bottom: -1px;
+}
+
+.service-header h1, .service-header p {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+
+/* --- TARJETAS DE SERVICIO --- */
+.service-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  background-color: var(--color-blanco);
+  height: 100%; /* Asegura que todas las tarjetas en una fila tengan la misma altura */
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: var(--color-cian);
+}
+
+/* --- ESTILOS ADICIONALES --- */
+.shadow {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.rounded-3 {
+  border-radius: 15px !important;
+}
+
+footer {
+    border-top: 5px solid var(--color-cian);
+} 

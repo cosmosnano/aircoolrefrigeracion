@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-   <style>
     body {
       font-family: 'Poppins', sans-serif;
       line-height: 1.7;
@@ -176,51 +175,96 @@
       </div>
     </div>
   </nav>
-  <header>
-    <h1>Contacto</h1>
-  </header>
-  <main class="contacto text-center" id="contacto">
-    <h2>Contactanos</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <form action="https://formsubmit.co/aircool.integral@gmail.com" method="POST" class="p-3 border rounded bg-white" style="text-align:left;">
-          <input type="hidden" name="_captcha" value="false">
-          <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="nombre" name="nombre" required>
-            <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+
+  <main class="container my-5">
+    <!-- Encabezado -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-12">
+        <div class="card text-center border-0 shadow-sm" style="background-color: #f8f9fa; border-left: 6px solid var(--color-cian); padding: 3rem 1.5rem;">
+          <div class="card-body">
+            <h1 class="card-title display-5 fw-bold mb-3">Estemos en Contacto</h1>
+            <p class="card-text lead">¿Tenés una consulta o un proyecto en mente? Completá el formulario o contactanos directamente. Estamos para ayudarte.</p>
           </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" name="email" required>
-            <div class="invalid-feedback">Por favor, ingresa un email válido.</div>
-          </div>
-          <div class="mb-3">
-            <label for="mensaje" class="form-label">Mensaje</label>
-            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
-            <div class="invalid-feedback">Por favor, escribe tu mensaje.</div>
-          </div>
-          <button type="submit" class="btn btn-primary w-100">Enviar</button>
-        </form>
-        <div class="mt-4 text-start">
-          <p><strong>Ing. Orlando Miceli</strong><br>Director técnico<br>📞 <a href="tel:+5493516296745">+54 9 351 629-6745</a></p>
-          <p><strong>Lic. Rolando Miceli</strong><br>Director de operaciones<br>📞 <a href="tel:+5493625490089">+54 9 362 549-0089</a></p>
-          <p><strong>D.G. Veronica Miceli</strong><br>Directora de Marketing y Publicidad<br>📞 <a href="tel:+5493516081156">+54 9 351 608-1156</a></p>
-          <p><strong>Email:</strong> <a href="mailto:aircool.integral@gmail.com">aircool.integral@gmail.com</a></p>
-          <p><strong>Dirección:</strong><br>Fortín Tapenagá 2430,<br>Resistencia – Chaco</p>
-          <p><strong>Aircool Refrigeración</strong></p>
-          <a href="https://wa.me/5493625490089" target="_blank" class="btn-whatsapp mt-2">Enviar mensaje por WhatsApp</a>
         </div>
       </div>
     </div>
-    <div class="container text-center my-4">
-      <a href="mailto:aircool.integral@gmail.com" class="btn-email">✉️ Email</a>
-      <a href="https://www.google.com/maps/place/Fort%C3%ADn+Tapenag%C3%A1+2430,+Resistencia,+Chaco" target="_blank" class="btn-ubicacion">📍 Ubicación</a>
+
+    <div class="row g-5">
+      <!-- Columna de Información de Contacto -->
+      <div class="col-lg-5">
+        <h3 class="mb-4">Información de Contacto</h3>
+        <div class="d-flex align-items-start mb-4">
+          <i class="fas fa-map-marker-alt fa-2x me-3 text-cian"></i>
+          <div>
+            <h5 class="fw-bold">Ubicación</h5>
+            <p class="mb-0">Fortín Tapenagá 2430<br>Resistencia, Chaco, Argentina</p>
+          </div>
+        </div>
+        <div class="d-flex align-items-start mb-4">
+          <i class="fas fa-envelope fa-2x me-3 text-cian"></i>
+          <div>
+            <h5 class="fw-bold">Email</h5>
+            <a href="mailto:aircool.integral@gmail.com" class="text-decoration-none text-dark">aircool.integral@gmail.com</a>
+          </div>
+        </div>
+        <div class="d-flex align-items-start mb-4">
+          <i class="fas fa-phone-alt fa-2x me-3 text-cian"></i>
+          <div>
+            <h5 class="fw-bold">Teléfonos</h5>
+            <p class="mb-1"><a href="tel:+5493516296745" class="text-decoration-none text-dark"><strong>Ing. Orlando Miceli (Dir. Técnico):</strong> +54 9 351 629-6745</a></p>
+            <p class="mb-1"><a href="tel:+5493625490089" class="text-decoration-none text-dark"><strong>Lic. Rolando Miceli (Dir. Operaciones):</strong> +54 9 362 549-0089</a></p>
+            <p class="mb-0"><a href="tel:+5493516081156" class="text-decoration-none text-dark"><strong>D.G. Veronica Miceli (Dir. Marketing):</strong> +54 9 351 608-1156</a></p>
+          </div>
+        </div>
+        
+        <h3 class="mt-5 mb-4">Seguinos</h3>
+        <div>
+          <a href="https://wa.me/5493625490089" class="btn btn-lg btn-light me-2" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp" style="color:#25d366;"></i></a>
+          <a href="https://www.instagram.com/aircoolrefrigeracion/" class="btn btn-lg btn-light me-2" target="_blank" title="Instagram"><i class="fab fa-instagram" style="color:#E4405F;"></i></a>
+          <a href="https://www.facebook.com/aircool.refrigeracion/" class="btn btn-lg btn-light" target="_blank" title="Facebook"><i class="fab fa-facebook" style="color:#3b5998;"></i></a>
+        </div>
+      </div>
+
+      <!-- Columna del Formulario -->
+      <div class="col-lg-7">
+        <div class="p-5 rounded-3" style="background-color: #f8f9fa;">
+          <h3 class="mb-4">Envianos tu Consulta</h3>
+          <form action="https://formsubmit.co/aircool.integral@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre Completo</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Tu Mensaje</label>
+              <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 py-2 fw-bold" style="background-color: var(--color-rojo); border-color: var(--color-rojo);">
+              Enviar Mensaje <i class="fas fa-paper-plane ms-2"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mapa -->
+    <div class="row mt-5">
+      <div class="col-12">
+        <div class="overflow-hidden rounded-3 shadow-sm">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.672801262828!2d-58.9669927856413!3d-27.44840398289944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94450db049df3321%3A0x6a1f42289c25691!2sFort%C3%ADn%20Tapenag%C3%A1%202430%2C%20H3508AJP%20Resistencia%2C%20Chaco!5e0!3m2!1ses-419!2sar!4v1678886456123!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
     </div>
   </main>
+  
   <footer>
     <p>&copy; 2025 Aircool Refrigeración. Todos los derechos reservados.</p>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+</html> 
 </html> 
