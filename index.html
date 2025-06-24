@@ -177,14 +177,14 @@
     .clientes-carousel-slide img {
       max-width: 130px;
       height: auto;
-      filter: grayscale(100%);
-      opacity: 0.7;
+      filter: none;
+      opacity: 1;
       transition: filter 0.3s, opacity 0.3s, transform 0.3s;
     }
     .clientes-carousel-slide img:hover {
-      filter: grayscale(0%);
-      opacity: 1;
-      transform: scale(1.1);
+      filter: grayscale(100%);
+      opacity: 0.6;
+      transform: scale(0.92);
     }
     @keyframes scroll {
       0% { transform: translateX(0); }
