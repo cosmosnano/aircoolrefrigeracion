@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     /* Tarjetas modernas para Misión, Visión y Valores con la paleta propuesta */
     .card-mvv {
       border-radius: 18px;
@@ -166,7 +169,7 @@
     .clientes-carousel-track {
       display: flex;
       animation: scroll 40s linear infinite;
-      width: calc(200px * 16); /* 200px por logo * 8 logos * 2 para el bucle */
+      width: calc(200px * 18); /* 200px por logo * 9 logos * 2 para el bucle */
     }
     .clientes-carousel-slide {
       width: 200px;
@@ -188,7 +191,7 @@
     }
     @keyframes scroll {
       0% { transform: translateX(0); }
-      100% { transform: translateX(calc(-200px * 8)); } /* Mover 8 logos */
+      100% { transform: translateX(calc(-200px * 9)); } /* Mover 9 logos */
     }
     .clientes-carousel:hover .clientes-carousel-track {
       animation-play-state: paused;
@@ -290,6 +293,9 @@
         <button type="button" data-bs-target="#carrusel-obra" data-bs-slide-to="8" aria-label="Slide 9"></button>
         <button type="button" data-bs-target="#carrusel-obra" data-bs-slide-to="9" aria-label="Slide 10"></button>
         <button type="button" data-bs-target="#carrusel-obra" data-bs-slide-to="10" aria-label="Slide 11"></button>
+        <button type="button" data-bs-target="#carrusel-obra" data-bs-slide-to="11" aria-label="Slide 12"></button>
+        <button type="button" data-bs-target="#carrusel-obra" data-bs-slide-to="12" aria-label="Slide 13"></button>
+        <button type="button" data-bs-target="#carrusel-obra" data-bs-slide-to="13" aria-label="Slide 14"></button>
       </div>
       <div class="carousel-inner rounded shadow">
         <div class="carousel-item active">
@@ -320,10 +326,19 @@
           <img src="img/obra/obra11.jpeg" class="d-block w-100" alt="Obra 9">
         </div>
         <div class="carousel-item">
-          <img src="img/obra/obra13.jpg" class="d-block w-100" alt="Obra 10">
+          <img src="img/obra/obra13.jpg" class="d-block w-100" alt="Obra 11">
         </div>
         <div class="carousel-item">
           <img src="img/obra/obra14.jpeg" class="d-block w-100" alt="Obra 11">
+        </div>
+        <div class="carousel-item">
+          <img src="img/obra/obra16.jpg" class="d-block w-100" alt="Obra 12">
+        </div>
+        <div class="carousel-item">
+          <img src="img/obra/obra17.jpg" class="d-block w-100" alt="Obra 13">
+        </div>
+        <div class="carousel-item">
+          <img src="img/obra/obra18.jpg" class="d-block w-100" alt="Obra 14">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-obra" data-bs-slide="prev">
@@ -343,7 +358,7 @@
   <section class="container my-5">
     <div class="row g-4">
       <div class="col-12">
-        <div class="p-4 rounded" style="background: #e3f0fa; border-left: 6px solid #007bff;">
+        <div class="p-4 rounded text-center" style="background: #e3f0fa; border-left: 6px solid #007bff;">
           <h2 class="mb-2 text-center"><i class="fas fa-users me-2 text-cian"></i>¿QUIÉNES SOMOS?</h2>
           <p>Somos una empresa con más de 20 años de experiencia en el rubro. Comenzamos como un emprendimiento familiar, trabajando en hogares, y el desafío constante nos llevó al mercado de la refrigeración industrial y comercial. Entendemos a la perfección las necesidades de nuestros clientes. Nos forjamos con el lema "Hacemos tu vida más fácil" y hoy, bajo la consigna "Toda la ciencia al alcance de tus manos", buscamos ser referentes en el NEA en mantenimiento electromecánico, climatización y asesoramiento técnico, cumpliendo con los más altos estándares, pero sobre todo, con la aprobación de nuestros clientes.</p>
         </div>
@@ -380,7 +395,7 @@
         </div>
       </div>
       <div class="col-12">
-        <div class="p-4 rounded" style="background: #e9ecef; border-left: 6px solid #6c757d;">
+        <div class="p-4 rounded text-center" style="background: #e9ecef; border-left: 6px solid #6c757d;">
           <h2 class="mb-2"><i class="fas fa-handshake me-2 text-cian"></i>Compromiso</h2>
           <p>Diseñamos respuestas, no improvisamos. Mantenemos lo esencial en marcha: productividad, confort y confianza. En aiRcOol trabajamos con criterio técnico y vocación humana. Prevenir no es opción, es deber. Cumplir no es meta, es punto de partida. Porque el verdadero servicio técnico cuida lo invisible: la tranquilidad de quien confía en nosotros.</p>
         </div>
@@ -506,6 +521,9 @@
           <div class="clientes-carousel-slide">
             <img src="img/logos-clientes/hotel-amerian.png" alt="Logo Hotel Amerian Casinos Gala">
           </div>
+          <div class="clientes-carousel-slide">
+            <img src="img/logos-clientes/vital-mayorista.png" alt="Logo Vital Mayorista">
+          </div>
           <!-- Repetir logos para el bucle -->
           <div class="clientes-carousel-slide">
             <img src="img/logos-clientes/gran-hotel-royal.png" alt="Logo Gran Hotel Royal">
@@ -531,6 +549,9 @@
           <div class="clientes-carousel-slide">
             <img src="img/logos-clientes/hotel-amerian.png" alt="Logo Hotel Amerian Casinos Gala">
           </div>
+          <div class="clientes-carousel-slide">
+            <img src="img/logos-clientes/vital-mayorista.png" alt="Logo Vital Mayorista">
+          </div>
         </div>
       </div>
     </section>
@@ -548,7 +569,7 @@
         <div class="col-12 col-md-4 mb-4 mb-md-0">
           <div class="counter-card p-4 rounded shadow-sm h-100" style="background: #fdf3f3;">
             <div class="counter-icon mb-2"><i class="fas fa-cogs fa-2x" style="color:#a52520;"></i></div>
-            <div class="counter-value display-4 fw-bold" style="color:#a52520;" data-target="2000">0</div>
+            <div class="counter-value display-4 fw-bold" style="color:#a52520;" data-target="2500">0</div>
             <div class="counter-label mt-2">Equipos Atendidos</div>
           </div>
         </div>
@@ -626,7 +647,7 @@
   </div>
 
   <footer>
-    <p>&copy; 2025 Aircool Refrigeración. Todos los derechos reservados.</p>
+    <p style="text-align:center">&copy; 2025 Aircool Refrigeración. Todos los derechos reservados.</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
