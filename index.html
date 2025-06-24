@@ -155,6 +155,44 @@
     .btn-instagram:hover { background: #388788; color: #fff !important; }
     .btn-ubicacion { background: #a52520; }
     .btn-ubicacion:hover { background: #388788; color: #fff !important; }
+
+    /* Estilos para el carrusel de logos de clientes */
+    .clientes-carousel {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      padding: 2rem 0;
+    }
+    .clientes-carousel-track {
+      display: flex;
+      animation: scroll 40s linear infinite;
+      width: calc(200px * 16); /* 200px por logo * 8 logos * 2 para el bucle */
+    }
+    .clientes-carousel-slide {
+      width: 200px;
+      flex-shrink: 0;
+      text-align: center;
+      padding: 0 2rem;
+    }
+    .clientes-carousel-slide img {
+      max-width: 130px;
+      height: auto;
+      filter: grayscale(100%);
+      opacity: 0.7;
+      transition: filter 0.3s, opacity 0.3s, transform 0.3s;
+    }
+    .clientes-carousel-slide img:hover {
+      filter: grayscale(0%);
+      opacity: 1;
+      transform: scale(1.1);
+    }
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(calc(-200px * 8)); } /* Mover 8 logos */
+    }
+    .clientes-carousel:hover .clientes-carousel-track {
+      animation-play-state: paused;
+    }
   </style>
 </head>
 <body>
@@ -352,7 +390,7 @@
 
   <main>
     <section class="servicios container" id="servicios">
-      <h2 class="text-center mb-5">Nuestros Servicios</h2>
+      <h2 class="display-5 fw-bold text-center mb-5"><i class="fas fa-tools me-3 text-cian"></i>Nuestros Servicios</h2>
       <div class="row">
         <div class="col-12">
           <p class="text-center">Selecciona un servicio desde el menú de navegación para ver más detalles.</p>
@@ -438,6 +476,65 @@
       </div>
     </section>
 
+    <!-- Sección Nuestros Clientes -->
+    <section class="container my-5" id="nuestros-clientes">
+      <h2 class="text-center mb-5"><i class="fas fa-handshake me-2 text-cian"></i>Nuestros Clientes</h2>
+      <div class="clientes-carousel">
+        <div class="clientes-carousel-track">
+          <!-- Logos de clientes -->
+          <div class="clientes-carousel-slide">
+            <img src="img/logos-clientes/gran-hotel-royal.png" alt="Logo Gran Hotel Royal">
+          </div>
+          <div class="clientes-carousel-slide">
+            <img src="img/logos-clientes/rapipago.png" alt="Logo Rapipago">
+          </div>
+          <div class="clientes-carousel-slide">
+            <img src="img/logos-clientes/casa-gobierno.png" alt="Logo Casa de Gobierno del Chaco">
+          </div>
+          <div class="clientes-carousel-slide">
+            <img src="img/logos-clientes/insssep.png" alt="Logo INSSSEP">
+          </div>
+          <div class="clientes-carousel-slide">
+            <img src="img/logos-clientes/hospital-perrando.png" alt="Logo Hospital Perrando">
+          </div>
+          <div class="clientes-carousel-slide">
+            <img src="img/logos-clientes/hospital-pediatrico.png" alt="Logo Hospital Pediatrico">
+          </div>
+          <div class="clientes-carousel-slide">
+            <img src="img/logos-clientes/carrefour-market.png" alt="Logo Carrefour Market">
+          </div>
+          <div class="clientes-carousel-slide">
+            <img src="img/logos-clientes/hotel-amerian.png" alt="Logo Hotel Amerian Casinos Gala">
+          </div>
+          <!-- Repetir logos para el bucle -->
+          <div class="clientes-carousel-slide">
+            <img src="img/logos-clientes/gran-hotel-royal.png" alt="Logo Gran Hotel Royal">
+          </div>
+          <div class="clientes-carousel-slide">
+            <img src="img/logos-clientes/rapipago.png" alt="Logo Rapipago">
+          </div>
+          <div class="clientes-carousel-slide">
+            <img src="img/logos-clientes/casa-gobierno.png" alt="Logo Casa de Gobierno del Chaco">
+          </div>
+          <div class="clientes-carousel-slide">
+            <img src="img/logos-clientes/insssep.png" alt="Logo INSSSEP">
+          </div>
+          <div class="clientes-carousel-slide">
+            <img src="img/logos-clientes/hospital-perrando.png" alt="Logo Hospital Perrando">
+          </div>
+          <div class="clientes-carousel-slide">
+            <img src="img/logos-clientes/hospital-pediatrico.png" alt="Logo Hospital Pediatrico">
+          </div>
+          <div class="clientes-carousel-slide">
+            <img src="img/logos-clientes/carrefour-market.png" alt="Logo Carrefour Market">
+          </div>
+          <div class="clientes-carousel-slide">
+            <img src="img/logos-clientes/hotel-amerian.png" alt="Logo Hotel Amerian Casinos Gala">
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Contadores de logros -->
     <section class="container my-5">
       <div class="row justify-content-center text-center">
@@ -513,7 +610,7 @@
           <div class="mt-4">
             <p><strong>Teléfono / WhatsApp:</strong> <a href="tel:+543625490089">+54 9 362 549-0089</a></p>
             <p><strong>Email:</strong> <a href="mailto:aircool.integral@gmail.com">aircool.integral@gmail.com</a></p>
-            <a href="https://wa.me/543625490089" target="_blank" class="btn-whatsapp">Enviar mensaje por WhatsApp</a>
+            <a href="https://wa.me/5493625490089" target="_blank" class="btn-whatsapp">Enviar mensaje por WhatsApp</a>
           </div>
         </div>
       </div>

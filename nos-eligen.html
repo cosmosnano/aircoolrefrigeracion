@@ -93,6 +93,44 @@
       #logo img { margin-bottom: 0.5rem; max-width: 140px; }
       .contact-center, .contact-right { text-align: center !important; }
     }
+
+    /* Estilos para el carrusel de logos de clientes */
+    .clientes-carousel {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+    }
+    .clientes-carousel-track {
+      display: flex;
+      animation: scroll 40s linear infinite;
+      width: calc(200px * 16); /* 200px por logo * 8 logos * 2 para el bucle */
+      align-items: center;
+    }
+    .clientes-carousel-slide {
+      width: 200px;
+      flex-shrink: 0;
+      text-align: center;
+      padding: 0 2rem;
+    }
+    .clientes-carousel-slide img {
+      max-width: 130px;
+      height: auto;
+      filter: grayscale(100%);
+      opacity: 0.7;
+      transition: filter 0.3s, opacity 0.3s, transform 0.3s;
+    }
+    .clientes-carousel-slide img:hover {
+      filter: grayscale(0%);
+      opacity: 1;
+      transform: scale(1.1);
+    }
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(calc(-200px * 8)); } /* Mover 8 logos */
+    }
+    .clientes-carousel:hover .clientes-carousel-track {
+      animation-play-state: paused;
+    }
   </style>
 </head>
 <body>
@@ -222,35 +260,68 @@
       </div>
     </div>
 
-    <!-- Logos de Clientes -->
-    <div class="py-5" style="background-color: #f8f9fa; border-radius: 18px;">
-      <div class="container">
-        <h2 class="text-center mb-5">Confían en Nosotros</h2>
-        <div class="row justify-content-center align-items-center text-center g-5">
-          <div class="col-6 col-md-4 col-lg-2">
-            <img src="https://upload.wikimedia.org/wikipedia/en/6/65/Carrefour_Groupe.svg" alt="Logo Carrefour" class="img-fluid" style="max-height: 50px;">
+    <!-- Sección Confían en Nosotros -->
+    <section class="container my-5" id="confian-nosotros">
+      <h2 class="text-center mb-5"><i class="fas fa-handshake me-2 text-cian"></i>Confían en Nosotros</h2>
+      <div class="clientes-carousel">
+        <div class="clientes-carousel-track">
+          <!-- Logos de clientes -->
+          <div class="clientes-carousel-slide">
+            <a href="#"><img src="img/logos-clientes/gran-hotel-royal.png" alt="Logo Gran Hotel Royal"></a>
           </div>
-          <div class="col-6 col-md-4 col-lg-2">
-            <img src="img/clientes/vital-logo.png" alt="Logo Supermayorista Vital" class="img-fluid" style="max-height: 50px;">
+          <div class="clientes-carousel-slide">
+            <a href="#"><img src="img/logos-clientes/rapipago.png" alt="Logo Rapipago"></a>
           </div>
-          <div class="col-6 col-md-4 col-lg-2">
-            <p class="text-muted fst-italic">Logo Cliente 3</p>
+          <div class="clientes-carousel-slide">
+            <a href="#"><img src="img/logos-clientes/casa-gobierno.png" alt="Logo Casa de Gobierno del Chaco"></a>
           </div>
-          <div class="col-6 col-md-4 col-lg-2">
-            <p class="text-muted fst-italic">Logo Cliente 4</p>
+          <div class="clientes-carousel-slide">
+            <a href="#"><img src="img/logos-clientes/insssep.png" alt="Logo INSSSEP"></a>
           </div>
-          <div class="col-6 col-md-4 col-lg-2">
-            <p class="text-muted fst-italic">Logo Cliente 5</p>
+          <div class="clientes-carousel-slide">
+            <a href="#"><img src="img/logos-clientes/hospital-perrando.png" alt="Logo Hospital Perrando"></a>
           </div>
-           <div class="col-6 col-md-4 col-lg-2">
-            <p class="text-muted fst-italic">Logo Cliente 6</p>
+          <div class="clientes-carousel-slide">
+            <a href="#"><img src="img/logos-clientes/hospital-pediatrico.png" alt="Logo Hospital Pediatrico"></a>
+          </div>
+          <div class="clientes-carousel-slide">
+            <a href="#"><img src="img/logos-clientes/carrefour-market.png" alt="Logo Carrefour Market"></a>
+          </div>
+          <div class="clientes-carousel-slide">
+            <a href="#"><img src="img/logos-clientes/hotel-amerian.png" alt="Logo Hotel Amerian Casinos Gala"></a>
+          </div>
+          <!-- Repetir logos para el bucle -->
+          <div class="clientes-carousel-slide">
+            <a href="#"><img src="img/logos-clientes/gran-hotel-royal.png" alt="Logo Gran Hotel Royal"></a>
+          </div>
+          <div class="clientes-carousel-slide">
+            <a href="#"><img src="img/logos-clientes/rapipago.png" alt="Logo Rapipago"></a>
+          </div>
+          <div class="clientes-carousel-slide">
+            <a href="#"><img src="img/logos-clientes/casa-gobierno.png" alt="Logo Casa de Gobierno del Chaco"></a>
+          </div>
+          <div class="clientes-carousel-slide">
+            <a href="#"><img src="img/logos-clientes/insssep.png" alt="Logo INSSSEP"></a>
+          </div>
+          <div class="clientes-carousel-slide">
+            <a href="#"><img src="img/logos-clientes/hospital-perrando.png" alt="Logo Hospital Perrando"></a>
+          </div>
+          <div class="clientes-carousel-slide">
+            <a href="#"><img src="img/logos-clientes/hospital-pediatrico.png" alt="Logo Hospital Pediatrico"></a>
+          </div>
+          <div class="clientes-carousel-slide">
+            <a href="#"><img src="img/logos-clientes/carrefour-market.png" alt="Logo Carrefour Market"></a>
+          </div>
+          <div class="clientes-carousel-slide">
+            <a href="#"><img src="img/logos-clientes/hotel-amerian.png" alt="Logo Hotel Amerian Casinos Gala"></a>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
   </main>
   
-  <footer>
+  <footer class="text-center py-4" style="background-color: #f1f1f1;">
     <p>&copy; 2025 Aircool Refrigeración. Todos los derechos reservados.</p>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
